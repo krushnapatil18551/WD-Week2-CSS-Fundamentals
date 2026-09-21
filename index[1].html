@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Fundamentals - Week 2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="top" class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="#top">CSS<span>Week2</span></a>
+      <ul class="nav-links">
+        <li><a href="#selectors">Selectors</a></li>
+        <li><a href="#box-model">Box Model</a></li>
+        <li><a href="#flexbox">Flexbox</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#project">Project</a></li>
+      </ul>
+    </nav>
+    <div class="hero container">
+      <p class="eyebrow">WEEK 2 ASSIGNMENT</p>
+      <h1>Learning CSS Fundamentals</h1>
+      <p class="hero-text">
+        A responsive webpage demonstrating selectors, the box model, Flexbox,
+        CSS Grid, and media queries.
+      </p>
+      <a class="btn" href="#project">Explore Project</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="selectors" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">TASK 1</p>
+        <h2>CSS Selectors & Styling</h2>
+        <p>Examples of element, class, ID, and universal selectors with colors, fonts, and text alignment.</p>
+      </div>
+      <div class="selector-demo">
+        <article class="info-card">
+          <h3>Element Selector</h3>
+          <p>All paragraph elements receive consistent typography and spacing.</p>
+        </article>
+        <article class="info-card highlight-card">
+          <h3>Class Selector</h3>
+          <p>This card uses a reusable class to apply a highlighted background.</p>
+        </article>
+        <article id="special-card" class="info-card">
+          <h3>ID Selector</h3>
+          <p>This card uses a unique ID selector for special styling.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="box-model" class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">TASK 2</p>
+          <h2>CSS Box Model</h2>
+          <p>Each box demonstrates width, height, margin, padding, border, radius, and shadow.</p>
+        </div>
+        <div class="box-model-demo">
+          <div class="model-box">
+            <span>Content</span>
+          </div>
+          <div class="model-details">
+            <h3>Box Model Properties</h3>
+            <ul>
+              <li><strong>Width & Height:</strong> Controls the element size.</li>
+              <li><strong>Padding:</strong> Space inside the border.</li>
+              <li><strong>Border:</strong> Visible boundary around the box.</li>
+              <li><strong>Margin:</strong> Space outside the border.</li>
+              <li><strong>Box Shadow:</strong> Adds depth and separation.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="flexbox" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">TASK 3</p>
+        <h2>Flexbox Layout</h2>
+        <p>Cards are aligned using a flexible row with gap, alignment, and wrapping.</p>
+      </div>
+      <div class="flex-container">
+        <div class="flex-item"><span>01</span><h3>Plan</h3><p>Understand the layout.</p></div>
+        <div class="flex-item"><span>02</span><h3>Design</h3><p>Apply CSS styling.</p></div>
+        <div class="flex-item"><span>03</span><h3>Test</h3><p>Check every screen.</p></div>
+      </div>
+    </section>
+
+    <section id="grid" class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">TASK 4</p>
+          <h2>CSS Grid Gallery</h2>
+          <p>A multi-column grid layout with rows, columns, gaps, and item placement.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item grid-large">HTML</div>
+          <div class="grid-item">CSS</div>
+          <div class="grid-item">Flexbox</div>
+          <div class="grid-item">Grid</div>
+          <div class="grid-item grid-wide">Responsive Design</div>
+          <div class="grid-item">Media Queries</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="section container">
+      <div class="section-heading">
+        <p class="eyebrow">TASK 5 & TASK 6</p>
+        <h2>Mini CSS Learning Project</h2>
+        <p>This section combines selectors, box model, Flexbox, Grid, and responsive design.</p>
+      </div>
+      <div class="project-layout">
+        <article class="project-card">
+          <h3>Responsive Web Design</h3>
+          <p>Layouts automatically adapt to desktop, tablet, and mobile screens.</p>
+          <a class="text-link" href="#top">Back to top ↑</a>
+        </article>
+        <article class="project-card">
+          <h3>Clean Code</h3>
+          <p>External CSS keeps the HTML organized and easy to maintain.</p>
+          <a class="text-link" href="#selectors">View selectors →</a>
+        </article>
+        <article class="project-card">
+          <h3>Modern Layouts</h3>
+          <p>Flexbox is used for alignment and Grid is used for structured sections.</p>
+          <a class="text-link" href="#grid">View grid →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Created by Krushna Patil | Web Development Week 2 Assignment</p>
+  </footer>
+</body>
+</html>

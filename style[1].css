@@ -1,0 +1,394 @@
+/* ================================
+   WEEK 2 CSS FUNDAMENTALS
+   Author: Krushna Patil
+   ================================ */
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element Selector */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #243047;
+  background: #f6f8fc;
+}
+
+/* Element Selector */
+p {
+  color: #5d6b82;
+  margin-bottom: 12px;
+}
+
+/* Class Selector */
+.container {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* Header and background styling */
+.site-header {
+  background: linear-gradient(135deg, #172554, #2563eb);
+  color: #ffffff;
+  min-height: 440px;
+}
+
+/* Flexbox navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.logo {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.logo span {
+  color: #bfdbfe;
+  margin-left: 5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #bfdbfe;
+}
+
+.hero {
+  padding: 65px 0 80px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #60a5fa;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.site-header .eyebrow {
+  color: #bfdbfe;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  color: #ffffff;
+}
+
+h2 {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  color: #172554;
+}
+
+h3 {
+  color: #1e3a8a;
+}
+
+.hero-text {
+  max-width: 650px;
+  margin: 0 auto 26px;
+  color: #dbeafe;
+}
+
+.btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #1d4ed8;
+  padding: 12px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: #dbeafe;
+}
+
+/* Section spacing */
+.section {
+  padding: 78px 0;
+}
+
+.alt-section {
+  background: #eaf0ff;
+}
+
+.section-heading {
+  max-width: 700px;
+  margin-bottom: 34px;
+}
+
+.section-heading p:last-child {
+  margin-bottom: 0;
+}
+
+/* Task 1: Selectors */
+.selector-demo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.info-card,
+.project-card {
+  background: #ffffff;
+  padding: 26px;
+  border: 1px solid #dbe3f0;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(23, 37, 84, 0.08);
+}
+
+.highlight-card {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+/* ID Selector */
+#special-card {
+  border-top: 5px solid #2563eb;
+}
+
+/* Task 2: Box Model */
+.box-model-demo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.model-box {
+  width: 280px;
+  height: 210px;
+  margin: 20px;
+  padding: 35px;
+  border: 12px solid #60a5fa;
+  border-radius: 20px;
+  background: #dbeafe;
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.model-box span {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.model-details {
+  max-width: 560px;
+}
+
+.model-details ul {
+  padding-left: 22px;
+  color: #5d6b82;
+}
+
+.model-details li {
+  margin-bottom: 10px;
+}
+
+/* Task 3: Flexbox */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  flex: 1 1 220px;
+  background: #ffffff;
+  border: 1px solid #dbe3f0;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(23, 37, 84, 0.08);
+}
+
+.flex-item span {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 50%;
+  font-weight: 800;
+}
+
+/* Task 4: CSS Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 130px;
+  gap: 18px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2563eb;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.grid-large {
+  grid-row: span 2;
+  background: #1e3a8a;
+}
+
+.grid-wide {
+  grid-column: span 2;
+  background: #3b82f6;
+}
+
+/* Task 6: Mini Project */
+.project-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.text-link {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  padding: 28px 5%;
+  background: #172554;
+  text-align: center;
+}
+
+.site-footer p {
+  color: #dbeafe;
+  margin: 0;
+}
+
+/* Task 5: Responsive Design */
+
+/* Tablets */
+@media (max-width: 850px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .selector-demo,
+  .project-layout {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box-model-demo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-large,
+  .grid-wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 560px) {
+  .site-header {
+    min-height: 500px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+
+  .hero {
+    padding: 45px 0 65px;
+  }
+
+  .section {
+    padding: 52px 0;
+  }
+
+  .selector-demo,
+  .project-layout,
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .model-box {
+    width: 230px;
+    height: 180px;
+    margin: 10px 0;
+    padding: 20px;
+  }
+
+  .grid-item {
+    min-height: 100px;
+  }
+
+  .grid-large,
+  .grid-wide {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
